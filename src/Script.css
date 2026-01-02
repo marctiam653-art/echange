@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+header {
+    width:auto;
+    height :150px;
+    color: white;
+    background-color: #003a8f;
+    border-bottom: 2px solid #0056b3;
+}
+
+.header-container {
+    width: 90%;
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px ;
+}
+
+.i1{
+    width: 60px;
+    height: 40px;
+}
+
+footer{
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+.d2{
+    align-items: left;
+    text-align: left;
+    size: 16px;
+    margin: 90px;
+    color: black;
+}
+h1{
+    width: 1000px;
+    height: 40px;
+    padding: 15px;
+    font-size: 35px;
+    color: white;
+    background-color: rgb(81, 159, 223);
+    justify-content: space-between;
+}
+
+.t1{
+    width: 650px;
+    height: 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+.t2{
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+.t3{
+    width: 655px;
+    height: 40px;
+    font-size: 18px;
+    padding: 10px;
+}
+.bu{
+    width: 320px;
+    height: 65px;
+    font-size: 25px;
+    border-color: rgb(0, 4, 7);
+    border-radius: 12px;
+    cursor:pointer;
+    transition: transform 2ms;
+}
+.bu :hover{
+    transform: scale(1.2);
+    background-color: rgb(81, 159, 223);
+}
+
+footer {
+    background-color: #003a8f;
+    font-size: 16px;
+    color: white;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background-color: #002c6a;
+    font-size: 13px;
+}

@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>echange</title>
+  </head>
+  <body>
+    <style type="text/css">
+        @import url('style.css');
+            body {
+            margin: 0;
+            display: flex;
+            place-items: center;
+            min-width: 320px;
+            min-height: 320vh;
+            width: 0px;
+            height: 0px;
+            }
+
+            h1 {
+            font-size: 3.2em;
+            line-height: 1.1;
+            }
+
+            button {
+            border-radius: 8px;
+            border: 1px solid transparent;
+            padding: 0.6em 1.2em;
+            font-size: 1em;
+            font-weight: 500;
+            font-family: inherit;
+            background-color: #1a1a1a;
+            cursor: pointer;
+            transition: border-color 0.25s;
+            }
+            button:hover {
+            border-color: #646cff;
+            }
+            button:focus,
+            button:focus-visible {
+            outline: 4px auto -webkit-focus-ring-color;
+            }
+
+            @media (prefers-color-scheme: light) {
+            :root {
+                color: #213547;
+                background-color: #ffffff;
+            }
+            a:hover {
+                color: #747bff;
+            }
+            button {
+                background-color: #f9f9f9;
+            }
+            }
+
+            header {
+                width:auto;
+                height :150px;
+                color: white;
+                background-color: #003a8f;
+                border-bottom: 2px solid #0056b3;
+            }
+
+            .header-container {
+                width: 90%;
+                color: white;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px ;
+            }
+
+            .i1{
+                width: 60px;
+                height: 40px;
+            }
+
+            footer{
+                background-color: gray;
+                padding: 20px;
+                text-align: center;
+                color: white;
+                margin-top: 20px;
+            }
+            .d2{
+                align-items: left;
+                text-align: left;
+                size: 16px;
+                margin: 90px;
+                color: black;
+            }
+            h1{
+                width: 1000px;
+                height: 40px;
+                padding: 15px;
+                font-size: 35px;
+                color: white;
+                background-color: rgb(81, 159, 223);
+                justify-content: space-between;
+            }
+
+            .t1{
+                width: 650px;
+                height: 30px;
+                font-size: 20px;
+                padding: 10px;
+            }
+            .t2{
+                width: 350px;
+                height: 30px;
+                font-size: 20px;
+                padding: 10px;
+            }
+            .t3{
+                width: 655px;
+                height: 40px;
+                font-size: 18px;
+                padding: 10px;
+            }
+            .bu{
+                width: 320px;
+                height: 65px;
+                font-size: 25px;
+                border-color: rgb(0, 4, 7);
+                border-radius: 12px;
+                cursor:pointer;
+                transition: transform 2ms;
+            }
+            .bu :hover{
+                transform: scale(1.2);
+                background-color: rgb(81, 159, 223);
+            }
+
+            footer {
+                background-color: #003a8f;
+                font-size: 16px;
+                color: white;
+            }
+
+            .footer-container {
+                width: 90%;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                padding: 30px 0;
+            }
+
+            .footer-section h4 {
+                margin-bottom: 10px;
+            }
+
+            .footer-section a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            .footer-section a:hover {
+                text-decoration: underline;
+            }
+
+            .footer-bottom {
+                text-align: center;
+                padding: 15px;
+                background-color: #002c6a;
+                font-size: 13px;
+            }
+    </style>
+  
+    <header>
+            <div class="header-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Campus">
+                    <span>Campus Académique</span>
+                </div>
+                <nav>
+                    <a href="#">Accueil</a>
+                    <a href="#">Inscription</a>
+                    <a href="#">Connexion</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+    </header>
+        
+        <section>
+            <div class="d1">
+
+            </div>
+            <div style="display: flex;">
+                <div class="d2">
+                    <form method="post" class="color" style=" margin: 60px;" id="formscript">
+                        <div style="font-size: 22px; font-family:Arial, Helvetica, sans-serif;">
+                            <div>
+                                <h1>Information de compte </h1>
+                            </div><br>
+                           
+                    
+                            <div class="d1">
+                                <div>
+                                    <label>Mon adresse e-mail*</label><br>
+                                    <input type="text" id="mail" class="t1" placeholder="marctiam@gmail.com">                      
+                                </div><br>
+                                <div>
+                                    <label>Mot de passe *</label><br>
+                                    <input type="password" id="password" class="t2">
+                                </div><br>
+                                <div>
+                                    <label>Confirmer le mot de passe *</label><br>
+                                    <input type="password" id="confirmpassword" class="t2">
+                                </div>
+                            </div><br>
+        
+                            <div>
+                                <h1>Informations Personnelles</h1>
+                            </div><br>
+                           <div>
+                            <label>Civilite*</label><br>
+                            <input type="radio" name="civilite" value="M."> <label>M.</label><br>
+                            <input type="radio" name="civilite" value="Mme."> <label>Mme.</label>
+                           </div><br>
+                    
+                            <div>
+                                <label>Nom *</label><br>
+                                <input type="text" class="t1" id="nom">
+                           </div>
+                            <br>
+                            <div>
+                                <label>Prenom *</label><br>
+                                <input type="text" class="t1" id="prenom">
+                           </div>
+                            <br>
+                        
+                            <div>
+                                <label>Pays de résidence *</label><br>
+                                <select id="responsable" class="t3">
+                                    <option value="">-- choisir une valeur --</option>
+                                    <option value="Cameroun">Cameroun</option>
+                                    <option value="Mali">Mali</option>
+                                    <option value="Senegal">Senegal</option>
+                                    <option value="Congo">Congo</option>
+                                    <option value="Guinee">Guinee</option>
+                                    <option value="Tchad">Tchad</option>
+                                    <option value="Gabon">Gabon</option>
+                                    <option value="Ivoire">Cote d'Ivoire</option>
+                                    <option value="Burkina Faso">Burkina Faso</option>
+                                    <option value="Niger">Niger</option>
+                                    <option value="Benin">Benin</option>
+                                    <option value="Togo">Togo</option>
+                                    <option value="Liberia">Liberia</option>
+                                </select><br><br>
+                                <label>Pays de Nationalitée</label><br>
+                                <input type="text" class="t1" id="pays" placeholder="Nationalitée Camerounaise"><br><br>
+                                <label>Code postal *</label><br>
+                                <input type="text" class="t1" id="codepostal" placeholder="12345"><br><br>
+                                <label>Ville *</label><br>
+                                <input type="text" class="t1" id="ville" placeholder="Douala"><br><br>
+                                <label>Telephone *</label><br>
+                                <input type="tel" id="tel" class="t1" placeholder="679-33-86-20">
+                            </div>
+                            <br>
+    
+                            <div>
+                                <h1>Informations Complementaires</h1>
+                            </div><br>
+                            <div>
+                                <label>Vous êtes : *</label><br>
+                                <input type="radio" id="etudiant" name="statut" value="etudiant"> <label>Etudiant</label><br>
+                                <input type="radio" id="enseignant" name="statut" value="enseignant"> <label>Enseignant</label><br>
+                                <input type="radio" id="institutionnel" name="statut" value="Institutionnel"> <label>Institutionnel</label><br><br>
+                                <input type="checkbox" style="width: 50px; height: 24px;" id="newsletter" name="newsletter" value="yes"> <label>J'accepte que mes donnees soient traités pour recevoir des communication adaptée 
+    
+                                </label>
+                            </div><br><br>
+                            <div>
+                                <button class="bu" id="Creer">Créer un Compte</button>
+                            </div>
+                           
+                        </div>
+                    </form>
+                </div>
+               
+            </div>
+            
+        </section>
+      
+
+        
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>Plateforme</h4>
+                    <a href="#">À propos</a>
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Étudiants</h4>
+                    <a href="#">Inscription</a>
+                    <a href="#">Connexion</a>
+                    <a href="#">FAQ</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email : support@campus.edu</p>
+                    <p>Tél : +237 XXX XXX XXX</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                © 2025 – Plateforme Académique | Tous droits réservés
+            </div>
+        </footer>
+  </body>
+</html>
